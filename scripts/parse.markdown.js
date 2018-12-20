@@ -41,7 +41,7 @@ function extractText(tokens) {
   return result.join('');
 }
 
-// module.exports = 
+
 function parseMarkdown(text, options) {
   options = options || {};
   parseLists = options.lists !== false;
@@ -124,4 +124,4 @@ function parseMarkdown(text, options) {
   }
 
   return headings;
-// };
+ };
