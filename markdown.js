@@ -18,8 +18,18 @@
 
 // d3.select('svg#mindmap').append('circle').attr("r", 40);
 
-d3.text("data/features.md", function(error, text) {
+debugger;
+
+d3.text("features.md", function(error, text) {
+  
+  if (error) {
+    console.log(error);
+  }
+  
+  console.log(text);
+                
   const data = transform(parseMarkdown(text));
 
+  console.log(data);
   
 });
