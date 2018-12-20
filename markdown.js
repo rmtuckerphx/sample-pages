@@ -20,7 +20,15 @@
 debugger;
 
 d3.text("data/features.md", function(error, text) {
+  
+  if (error) {
+    console.log(error};
+  }
+  
+  console.log(text);
+                
   const data = transform(parseMarkdown(text));
 
+  console.log(data);
   
 });
