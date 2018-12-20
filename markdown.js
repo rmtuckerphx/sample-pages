@@ -17,6 +17,7 @@
 
 
 // d3.select('svg#mindmap').append('circle').attr("r", 40);
+debugger;
 
 d3.text("data/features.md", function(error, text) {
   const data = transform(parseMarkdown(text));
